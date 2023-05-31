@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+ul ul{
+    margin-left: 2em;
+}
+
 @font-face{
     font-family: Montserrat;
     src: url("fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 body{
-    background-color: #F0EBCE;
+    background-color: #F0E2D0;
     width: 100%;
 }
 
@@ -20,7 +24,6 @@ nav{
     background-image: url("image/trees.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid black;
 }
 
 #logo{
@@ -39,16 +42,15 @@ nav{
 
 
 #mymenu{
-    border: solid black;
     width: 100%;
     height: auto;
     font-size: 7vw;
     text-align: center;
+    border-bottom: solid black 3px;
 }
 
 #mymenu a{
     font-family: Montserrat;
-    list-style: none;
     text-decoration:none;
     color: black;
 }
@@ -67,8 +69,41 @@ nav{
     margin-right: 2%;
 }
 
+.section{
+    font-family: Montserrat;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.185);
+    color: black;
+    list-style:inside;
+}
+
+.section a{
+    text-decoration: none;
+    color: black;
+}
+
+.section ul{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.section ul li{
+    margin-top: 10px;
+}
+
+.sectionText{
+    margin: 0 20px;
+    width: 80%;
+}
+
 @media screen and (min-width: 400px){
     #mymenu{
         font-size: 30px;
+    }
+
+    .section{
+        width: 80%;
+        margin: 0 auto;
     }
 }
