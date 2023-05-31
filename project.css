@@ -15,7 +15,10 @@ ul ul{
 
 body{
     background-color: #F0E2D0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
@@ -93,8 +96,34 @@ nav{
 }
 
 .sectionText{
-    margin: 0 20px;
+    margin: 0 auto;
     width: 80%;
+}
+
+.section h1{
+    text-decoration: underline;
+}
+
+.sectionText ul{
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+    margin-top: auto;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer img{
+    height: 26px;
+    width: auto;
 }
 
 @media screen and (min-width: 400px){
