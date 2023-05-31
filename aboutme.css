@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul ul{
+    margin-left: 2em;
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+body{
+    background-color: #F4EAD5;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: auto;
+    min-width: 100%;
+    background-image: url("image/landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid black 3px;
+}
+
+#logo{
+    width: 50%;
+    height: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#mymenu{
+    width: 100%;
+    height: auto;
+    font-size: 7vw;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#mymenu a{
+    font-family: Montserrat;
+    text-decoration:none;
+    color: black;
+}
+
+#mymenu a:hover{
+    color: white;
+}
+
+#mymenu li{
+    display: inline;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#socialMedia{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: space-between;
+    width: auto;
+    height: 40vw;
+    max-height: 130px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#socialMedia img{
+    width: 100%;
+    max-width: 32px;
+    height: 100%;
+}
+
+
+footer{
+    display: flex;
+    margin-top: auto;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer img{
+    height: 26px;
+    width: auto;
+}
+
+@media screen and (min-width: 400px){
+    #mymenu{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #socialMedia{
+        flex-direction: row;
+        width: 130px;
+        height: auto;
+    }
+}
