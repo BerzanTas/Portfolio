@@ -84,7 +84,64 @@ nav{
 #socialMedia img{
     width: 100%;
     max-width: 32px;
-    height: 100%;
+    height: auto;
+}
+
+#myPhoto img{
+    width: 40vw;
+    max-width: 300px;
+    border-radius: 45px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+section{
+    font-family: Montserrat;
+}
+
+.mainText{
+    float: left;
+    width: 50vw;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.mainText h2{
+    margin-bottom: 15px;
+}
+
+.mainText2{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+#abilities{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: rgba(193, 208, 181, .4);
+    margin-top: 50px;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#abilities img{
+    width: 80px;
+    height: auto;
 }
 
 
@@ -117,5 +174,11 @@ footer img{
         flex-direction: row;
         width: 130px;
         height: auto;
+    }
+    .mainText{
+        margin-left: 10%;
+    }
+    .mainText2{
+        width: 80%;
     }
 }
