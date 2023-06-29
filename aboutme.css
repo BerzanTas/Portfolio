@@ -64,7 +64,7 @@ nav{
 }
 
 #mymenu li{
-    display: inline;
+    display: inline-block;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -73,7 +73,8 @@ nav{
     display: flex;
     flex-direction: column;
     float: right;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    gap: 20px;
     width: auto;
     height: 40vw;
     max-height: 130px;
@@ -93,8 +94,10 @@ nav{
     border-radius: 45px;
     float: right;
     margin-top: 50px;
-    margin-right: 10px;
+    margin-right: 50px;
     margin-bottom: 50px;
+
+    display: none;
 }
 
 section{
@@ -102,10 +105,9 @@ section{
 }
 
 .mainText{
-    float: left;
-    width: 50vw;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     text-align: justify;
     margin-bottom: 50px;
@@ -116,14 +118,32 @@ section{
     margin-bottom: 15px;
 }
 
+.mainText p{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+#chart img{
+    width: 30vw;
+    max-width: 300px;
+    float: left;
+    margin-left: 50px;
+    display: none;
+}
+
 .mainText2{
-    width: 90vw;
+    width: 80vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     text-align: justify;
     margin-bottom: 50px;
     text-align: justify;
+}
+
+.mainText2 p{
+    font-size: 22px;
+    padding-bottom: 10px;
 }
 
 #abilities{
@@ -170,15 +190,34 @@ footer img{
 }
 
 @media screen and (min-width: 600px){
-    #socialMedia{
-        flex-direction: row;
-        width: 130px;
-        height: auto;
+    
+    #mymenu{
+        padding-right: 40px;
     }
+    
+}
+
+
+
+@media screen and (min-width: 950px){
+
     .mainText{
-        margin-left: 10%;
+        float: left;
+        margin-left: 100px;
+        width: 50vw;
     }
+
     .mainText2{
-        width: 80%;
+        float: right;
+        margin-right: 100px;
+        width: 50vw;
+    }
+
+    #myPhoto img{
+        display: block;
+    }
+
+    #chart img{
+        display: block;
     }
 }
